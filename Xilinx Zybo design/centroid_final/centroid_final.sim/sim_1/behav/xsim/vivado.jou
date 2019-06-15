@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 25 15:57:17 2019
+# Process ID: 4372
+# Current directory: C:/Users/ilona/Desktop/lab7/detect_weight_center/detect_weight_center.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6216 C:\Users\ilona\Desktop\lab7\detect_weight_center\detect_weight_center.sim\sim_1\behav\xsim\tb_hdmi_behav.wdb
+# Log file: C:/Users/ilona/Desktop/lab7/detect_weight_center/detect_weight_center.sim/sim_1/behav/xsim/vivado.log
+# Journal file: C:/Users/ilona/Desktop/lab7/detect_weight_center/detect_weight_center.sim/sim_1/behav/xsim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\ilona\Desktop\lab7\detect_weight_center\detect_weight_center.sim\sim_1\behav\xsim\tb_hdmi_behav.wdb}
+close_sim

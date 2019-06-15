@@ -1,0 +1,13 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/SR_projekty/reka/median/median.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/SR_projekty/reka/median/median.srcs/sim_1/imports/new/hdmi_in.v,1559388734,verilog,,D:/SR_projekty/reka/median/median.srcs/sim_1/imports/new/hdmi_out.v,,hdmi_in,,,,,,,,
+D:/SR_projekty/reka/median/median.srcs/sim_1/imports/new/hdmi_out.v,1490345072,verilog,,D:/SR_projekty/reka/median/median.srcs/sources_1/new/median.v,,hdmi_out,,,,,,,,
+D:/SR_projekty/reka/median/median.srcs/sim_1/imports/new/tb_hdmi.v,1559390128,verilog,,,,tb_hdmi,,,,,,,,
+D:/SR_projekty/reka/median/median.srcs/sources_1/imports/new/delay.v,1556986862,verilog,,D:/SR_projekty/reka/median/median.srcs/sources_1/new/delayLinieBRAM_WP.v,,delay,,,,,,,,
+D:/SR_projekty/reka/median/median.srcs/sources_1/imports/new/multiDelay.v,1559386567,verilog,,D:/SR_projekty/reka/median/median.srcs/sim_1/imports/new/tb_hdmi.v,,multiDelay,,,,,,,,
+D:/SR_projekty/reka/median/median.srcs/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v,1557728652,verilog,,D:/SR_projekty/reka/median/median.srcs/sources_1/imports/new/delay.v,,delayLineBRAM,,,,,,,,
+D:/SR_projekty/reka/median/median.srcs/sources_1/new/delayLinieBRAM_WP.v,1557728732,verilog,,D:/SR_projekty/reka/median/median.srcs/sim_1/imports/new/hdmi_in.v,,delayLinieBRAM_WP,,,,,,,,
+D:/SR_projekty/reka/median/median.srcs/sources_1/new/median.v,1559392756,verilog,,D:/SR_projekty/reka/median/median.srcs/sources_1/imports/new/multiDelay.v,,median,,,,,,,,

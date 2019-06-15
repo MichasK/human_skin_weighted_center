@@ -1,0 +1,192 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 9508
+License: Customer
+
+Current time: 	Sat Jun 15 23:36:22 GMT+01:00 2019
+Time zone: 	GMT+01:00 (GMT+01:00)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 2
+Available disk space: 12 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xil/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xil/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	michask
+User home directory: C:/Users/michask
+User working directory: D:/SR_projekty/reka/konkatenacja_h_sync
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI_BASEROOT: D:/Xil/Vivado
+HDI_APPROOT: D:/Xil/Vivado/2018.3
+RDI_DATADIR: D:/Xil/Vivado/2018.3/data
+RDI_BINDIR: D:/Xil/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/michask/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/michask/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/michask/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xil/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/SR_projekty/reka/konkatenacja_h_sync/vivado.log
+Vivado journal file location: 	D:/SR_projekty/reka/konkatenacja_h_sync/vivado.jou
+Engine tmp dir: 	D:/SR_projekty/reka/konkatenacja_h_sync/.Xil/Vivado-9508-DESKTOP-FB8OT1G
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xil/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xil/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xil/Vivado/2018.3
+XILINX_SDK: D:/Xil/SDK/2018.3
+XILINX_VIVADO: D:/Xil/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xil/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 632 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\SR_projekty\reka\konkatenacja_h_sync\konkatenacja_h_sync.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/SR_projekty/reka/konkatenacja_h_sync/konkatenacja_h_sync.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/SR_projekty/reka/konkatenacja_h_sync/konkatenacja_h_sync.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SR_projekty/reka/konkatenacja_h_sync/konkatenacja_h_sync.srcs/sources_1/new'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xil/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 95 MB (+96965kb) [00:00:12]
+// [Engine Memory]: 660 MB (+540260kb) [00:00:12]
+// [GUI Memory]: 106 MB (+6536kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  3797 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 673 MB. GUI used memory: 53 MB. Current time: 6/15/19, 11:36:28 PM GMT+01:00
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 705.195 ; gain = 76.980 
+// Project name: konkatenacja_h_sync; location: D:/SR_projekty/reka/konkatenacja_h_sync; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 694 MB (+1198kb) [00:00:18]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (konkatenacja_v_sync.v) elapsed time: 0.2s
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, konkatenacja_v_sync (konkatenacja_v_sync.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, konkatenacja_v_sync (konkatenacja_v_sync.v)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("konkatenacja_v_sync.v", 181, 225); // cl (w, cp)
+selectCodeEditor("konkatenacja_v_sync.v", 181, 225, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "konkatenacja_v_sync.v", 'c'); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "v_sync_x1"); // l (aT, cp)
+// Elapsed time: 24 seconds
+selectComboBox("FindAndReplaceDialog.cp_Replace with:", "v_sync_vis_Centroid", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectComboBox("FindAndReplaceDialog.cp_Find what:", "v_sync_x1", 0); // JComboBox (cp, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cp_Find", "Find"); // JButton (cp, FindAndReplaceDialog)
+selectCodeEditor("konkatenacja_v_sync.v", 167, 239); // cl (w, cp)
+selectCodeEditor("konkatenacja_v_sync.v", 167, 239, false, false, false, false, true); // cl (w, cp) - Double Click
+selectComboBox("FindAndReplaceDialog.cp_Replace with:", "v_sync_vis_Median", -1); // JComboBox (cp, FindAndReplaceDialog)
+selectButton("FindAndReplaceDialog.cp_Find", "Find"); // JButton (cp, FindAndReplaceDialog)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // X (q, cp)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cp): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b (a, Q)
+// bx (Q):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+dismissDialog("Analyze source files for top modules"); // bx (Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton (C, I)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 7 seconds
+dismissDialog("Create and Package New IP"); // Q (cp)
+// TclEventType: LOAD_FEATURE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// bx (cp):  IP Packager : addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: ipx::package_project -root_dir d:/sr_projekty/reka/konkatenacja_h_sync/konkatenacja_h_sync.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1247 ms.
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// [Engine Memory]: 729 MB (+370kb) [00:02:24]
+// [GUI Memory]: 126 MB (+15077kb) [00:02:24]
+dismissDialog("IP Packager"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 745 MB. GUI used memory: 61 MB. Current time: 6/15/19, 11:38:39 PM GMT+01:00
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// bx (cp):  Package IP : addNotify
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path d:/SR_projekty/reka/konkatenacja_h_sync/konkatenacja_h_sync.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/SR_projekty/reka/konkatenacja_h_sync/konkatenacja_h_sync.srcs/sources_1/new' 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: ipx::check_integrity -quiet [ipx::current_core] 
+// Tcl Message: ipx::archive_core {d:\sr_projekty\reka\konkatenacja_h_sync\konkatenacja_h_sync.srcs\sources_1\new\xilinx.com_user_konkatenacja_v_sync_1.0.zip} [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton (C, I)

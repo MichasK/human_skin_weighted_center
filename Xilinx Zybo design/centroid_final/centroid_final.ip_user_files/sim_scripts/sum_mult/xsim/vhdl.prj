@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../centroid_final.srcs/sources_1/ip/sum_mult/sim/sum_mult.vhd" \
+
+nosort

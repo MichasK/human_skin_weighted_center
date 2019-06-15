@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  6 07:34:31 2019
+# Process ID: 8920
+# Current directory: D:/SR_projekty/reka/v_centroid
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7436 D:\SR_projekty\reka\v_centroid\v_centroid.xpr
+# Log file: D:/SR_projekty/reka/v_centroid/vivado.log
+# Journal file: D:/SR_projekty/reka/v_centroid\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SR_projekty/reka/v_centroid/v_centroid.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_hdmi.tcl
+run 20 us
+run 20 us
+run 20 us
+run 20 us
+close_sim

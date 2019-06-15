@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 14 20:58:36 2019
+# Process ID: 14372
+# Current directory: D:/SR_projekty/reka/konkatenacja_wejsc/konkatenacja_wejsc.runs/synth_1
+# Command line: vivado.exe -log konkatenacja_wejsc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source konkatenacja_wejsc.tcl
+# Log file: D:/SR_projekty/reka/konkatenacja_wejsc/konkatenacja_wejsc.runs/synth_1/konkatenacja_wejsc.vds
+# Journal file: D:/SR_projekty/reka/konkatenacja_wejsc/konkatenacja_wejsc.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source konkatenacja_wejsc.tcl -notrace

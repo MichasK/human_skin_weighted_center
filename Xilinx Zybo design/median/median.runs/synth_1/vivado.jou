@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun  1 13:39:57 2019
+# Process ID: 13624
+# Current directory: D:/SR_projekty/reka/median/median.runs/synth_1
+# Command line: vivado.exe -log median.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source median.tcl
+# Log file: D:/SR_projekty/reka/median/median.runs/synth_1/median.vds
+# Journal file: D:/SR_projekty/reka/median/median.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source median.tcl -notrace

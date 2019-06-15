@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  6 08:17:03 2019
+# Process ID: 10276
+# Current directory: D:/SR_projekty/reka/centroid_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1676 D:\SR_projekty\reka\centroid_final\centroid_final.xpr
+# Log file: D:/SR_projekty/reka/centroid_final/vivado.log
+# Journal file: D:/SR_projekty/reka/centroid_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SR_projekty/reka/centroid_final/centroid_final.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sr_projekty/reka/centroid_final'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SR_projekty/reka/delay'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xil/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 761.504 ; gain = 155.520
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 08:19:12 2019...

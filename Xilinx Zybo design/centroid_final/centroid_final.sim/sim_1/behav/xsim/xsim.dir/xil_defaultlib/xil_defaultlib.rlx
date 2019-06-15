@@ -1,0 +1,15 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/SR_projekty/SR_projekty/reka/delay/delay.srcs/sources_1/new/delay.v,1557124098,verilog,,D:/SR_projekty/SR_projekty/reka/delay/delay.srcs/sources_1/new/multiDelay.v,,delay,,,,,,,,
+D:/SR_projekty/SR_projekty/reka/delay/delay.srcs/sources_1/new/multiDelay.v,1557124098,verilog,,D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/multi_deelay_0/sim/multi_deelay_0.v,,multi_deelay,,,,,,,,
+D:/SR_projekty/reka/centroid_final/centroid_final.sim/sim_1/behav/xsim/glbl.v,1544151880,verilog,,,,glbl,,,,,,,,
+D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sim_1/imports/new/hdmi_in.v,1557124082,verilog,,D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sim_1/imports/new/hdmi_out.v,,hdmi_in,,,,,,,,
+D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sim_1/imports/new/hdmi_out.v,1490345072,verilog,,D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sim_1/imports/new/tb_hdmi.v,,hdmi_out,,,,,,,,
+D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sim_1/imports/new/tb_hdmi.v,1556801707,verilog,,,,tb_hdmi,,,,,,,,
+D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/div_28_20/sim/div_28_20.vhd,1557124085,vhdl,,,,div_28_20,,,,,,,,
+D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/div_30_20/sim/div_30_20.vhd,1557124091,vhdl,,,,div_30_20,,,,,,,,
+D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/multi_deelay_0/sim/multi_deelay_0.v,1557124098,verilog,,D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v,,multi_deelay_0,,,,,,,,
+D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/sum_mult/sim/sum_mult.vhd,1557124095,vhdl,,,,sum_mult,,,,,,,,
+D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v,1556987214,verilog,,D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sim_1/imports/new/hdmi_in.v,,detect_weight_center,,,,,,,,

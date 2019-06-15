@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May  4 16:34:04 2019
+# Process ID: 13636
+# Current directory: D:/SR_projekty/reka/v_centroid
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6820 D:\SR_projekty\reka\v_centroid\v_centroid.xpr
+# Log file: D:/SR_projekty/reka/v_centroid/vivado.log
+# Journal file: D:/SR_projekty/reka/v_centroid\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SR_projekty/reka/v_centroid/v_centroid.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {d:\sr_projekty\reka\v_centroid\v_centroid.srcs\component.xml}
+ipx::package_project -root_dir d:/sr_projekty/reka/v_centroid/v_centroid.srcs -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/SR_projekty/reka/v_centroid/v_centroid.srcs
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\sr_projekty\reka\v_centroid\v_centroid.srcs\xilinx.com_user_vis_centroid_2.0.zip} [ipx::current_core]

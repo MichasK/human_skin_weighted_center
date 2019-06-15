@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1556983403">
+  <File Type="PA-TCL" Name="vis_centroid.tcl"/>
+  <File Type="REPORTS-TCL" Name="vis_centroid_reports.tcl"/>
+  <File Type="RDS-RDS" Name="vis_centroid.vds"/>
+  <File Type="RDS-UTIL" Name="vis_centroid_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="vis_centroid_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="vis_centroid.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/vis_centroid.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../SR blondynka/lab7/detect_weight_center/detect_weight_center.srcs/sim_1/imports/new/vis_centroid.v"/>
+        <Attr Name="ImportTime" Val="1555789341"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vis_centroid/component.xml">
+      <FileInfo SFType="IPXACT">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../SR blondynka/lab6/ip_repo/vis_centroid/component.xml"/>
+        <Attr Name="ImportTime" Val="1556090520"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="vis_centroid"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

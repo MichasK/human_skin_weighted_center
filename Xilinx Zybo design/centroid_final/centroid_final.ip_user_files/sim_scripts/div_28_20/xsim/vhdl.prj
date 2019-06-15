@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../centroid_final.srcs/sources_1/ip/div_28_20/sim/div_28_20.vhd" \
+
+nosort

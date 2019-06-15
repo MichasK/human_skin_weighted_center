@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun  9 18:44:41 2019
+# Process ID: 14968
+# Current directory: D:/SR_projekty/reka/median
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19328 D:\SR_projekty\reka\median\median.xpr
+# Log file: D:/SR_projekty/reka/median/vivado.log
+# Journal file: D:/SR_projekty/reka/median\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SR_projekty/reka/median/median.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SR_projekty/reka/median/median.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xil/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 744.305 ; gain = 121.836
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  9 18:48:41 2019...

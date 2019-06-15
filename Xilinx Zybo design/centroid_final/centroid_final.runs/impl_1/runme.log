@@ -1,0 +1,706 @@
+
+*** Running vivado
+    with args -log detect_weight_center.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source detect_weight_center.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source detect_weight_center.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SR_projekty/reka/delay'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xil/Vivado/2018.3/data/ip'.
+Command: link_design -top detect_weight_center -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+CRITICAL WARNING: [Project 1-840] The design checkpoint file 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_28_20_synth_1/div_28_20.dcp' was generated for an IP by an out of context synthesis run and should not be used directly as a source in a Vivado flow. Constraints and other files related to the IP are only stored in the xci/xcix, not the checkpoint. It is strongly recommended that that the original IP source file (.xci/.xcix) be used.
+CRITICAL WARNING: [Project 1-840] The design checkpoint file 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_30_20_synth_1/div_30_20.dcp' was generated for an IP by an out of context synthesis run and should not be used directly as a source in a Vivado flow. Constraints and other files related to the IP are only stored in the xci/xcix, not the checkpoint. It is strongly recommended that that the original IP source file (.xci/.xcix) be used.
+CRITICAL WARNING: [Project 1-840] The design checkpoint file 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/sum_mult_synth_1/sum_mult.dcp' was generated for an IP by an out of context synthesis run and should not be used directly as a source in a Vivado flow. Constraints and other files related to the IP are only stored in the xci/xcix, not the checkpoint. It is strongly recommended that that the original IP source file (.xci/.xcix) be used.
+CRITICAL WARNING: [Project 1-840] The design checkpoint file 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/multi_deelay_0_synth_1/multi_deelay_0.dcp' was generated for an IP by an out of context synthesis run and should not be used directly as a source in a Vivado flow. Constraints and other files related to the IP are only stored in the xci/xcix, not the checkpoint. It is strongly recommended that that the original IP source file (.xci/.xcix) be used.
+INFO: [Project 1-454] Reading design checkpoint 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_30_20_synth_1/div_30_20.dcp' for cell 'center_x'
+INFO: [Project 1-454] Reading design checkpoint 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_28_20_synth_1/div_28_20.dcp' for cell 'center_y'
+INFO: [Project 1-454] Reading design checkpoint 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/sum_mult_synth_1/sum_mult.dcp' for cell 'make_m01'
+INFO: [Netlist 29-17] Analyzing 400 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_ports sys_clock]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:10]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sys_clock]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:10]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_n'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_en[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_scl_io'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_sda_io'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:76]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports hdmi_in_clk_p]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:76]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pHSync'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pVSync'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 642.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+13 Infos, 58 Warnings, 61 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 642.008 ; gain = 334.145
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.735 . Memory (MB): peak = 654.664 ; gain = 12.656
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 192b9e2f9
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1144.320 ; gain = 489.656
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+WARNING: [Opt 31-155] Driverless net center_y/U0/i_synth/i_nd_to_rdy/s_axis_divisor_tvalid is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: center_y/U0/i_synth/i_nd_to_rdy/opt_has_pipe.first_q[0]_i_1__29
+WARNING: [Opt 31-155] Driverless net center_y/U0/i_synth/i_nd_to_rdy/s_axis_dividend_tvalid is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: center_y/U0/i_synth/i_nd_to_rdy/opt_has_pipe.first_q[0]_i_1__29
+WARNING: [Opt 31-155] Driverless net center_x/U0/i_synth/i_nd_to_rdy/s_axis_divisor_tvalid is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: center_x/U0/i_synth/i_nd_to_rdy/opt_has_pipe.first_q[0]_i_1__31
+WARNING: [Opt 31-155] Driverless net center_x/U0/i_synth/i_nd_to_rdy/s_axis_dividend_tvalid is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: center_x/U0/i_synth/i_nd_to_rdy/opt_has_pipe.first_q[0]_i_1__31
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 93a44a13
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.284 . Memory (MB): peak = 1241.301 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 4 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 93a44a13
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.364 . Memory (MB): peak = 1241.301 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: a649e620
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1241.301 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1702 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: a649e620
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1241.301 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1b8fd0f0e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1241.301 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1b8fd0f0e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1241.301 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               2  |               4  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |            1702  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1241.301 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1b8fd0f0e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1241.301 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1b8fd0f0e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1241.301 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1b8fd0f0e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1241.301 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1241.301 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1b8fd0f0e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1241.301 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 62 Warnings, 61 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1241.301 ; gain = 599.293
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1241.301 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1241.301 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/impl_1/detect_weight_center_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file detect_weight_center_drc_opted.rpt -pb detect_weight_center_drc_opted.pb -rpx detect_weight_center_drc_opted.rpx
+Command: report_drc -file detect_weight_center_drc_opted.rpt -pb detect_weight_center_drc_opted.pb -rpx detect_weight_center_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/SR_projekty/reka/centroid_final/centroid_final.runs/impl_1/detect_weight_center_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1241.301 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: eb0af7df
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1241.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1241.301 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d22eedae
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.818 . Memory (MB): peak = 1241.301 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1abda1695
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.901 . Memory (MB): peak = 1241.301 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1abda1695
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.907 . Memory (MB): peak = 1241.301 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1abda1695
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.908 . Memory (MB): peak = 1241.301 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1b0cb7164
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1241.484 ; gain = 0.184
+WARNING: [Place 46-29] place_design is not in timing mode. Skip physical synthesis in placer
+Phase 2 Global Placement | Checksum: aac7834d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: aac7834d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 15adcd942
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1156e6799
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 179bdd1ed
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 126e4addd
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 126e4addd
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: d5cf12c0
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+Phase 3 Detail Placement | Checksum: d5cf12c0
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: d5cf12c0
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: d5cf12c0
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: d5cf12c0
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1244.105 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: f458866c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: f458866c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+Ending Placer Task | Checksum: 65a8f526
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.105 ; gain = 2.805
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 63 Warnings, 61 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1244.105 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1252.516 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.321 . Memory (MB): peak = 1253.969 ; gain = 9.863
+INFO: [Common 17-1381] The checkpoint 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/impl_1/detect_weight_center_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file detect_weight_center_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1253.969 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file detect_weight_center_utilization_placed.rpt -pb detect_weight_center_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file detect_weight_center_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1253.969 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 36873f2b ConstDB: 0 ShapeSum: 2f21b5fb RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 100d8535c
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.934 ; gain = 71.965
+Post Restoration Checksum: NetGraph: 9da9a3cc NumContArr: 632eaf90 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 100d8535c
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1331.926 ; gain = 77.957
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 100d8535c
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1331.926 ; gain = 77.957
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 1e31488f4
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1334.043 ; gain = 80.074
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 64b49c65
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1334.867 ; gain = 80.898
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 868948e5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1334.867 ; gain = 80.898
+Phase 4 Rip-up And Reroute | Checksum: 868948e5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1334.867 ; gain = 80.898
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 868948e5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1334.867 ; gain = 80.898
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 868948e5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1334.867 ; gain = 80.898
+Phase 6 Post Hold Fix | Checksum: 868948e5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1334.867 ; gain = 80.898
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.784206 %
+  Global Horizontal Routing Utilization  = 1.0756 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 38.7387%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 40.5405%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 33.8235%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 32.3529%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 868948e5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1334.867 ; gain = 80.898
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 868948e5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1336.875 ; gain = 82.906
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 20f54d1b
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1336.875 ; gain = 82.906
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1336.875 ; gain = 82.906
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+58 Infos, 63 Warnings, 61 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1336.875 ; gain = 82.906
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1336.875 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1340.113 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.342 . Memory (MB): peak = 1344.734 ; gain = 7.859
+INFO: [Common 17-1381] The checkpoint 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/impl_1/detect_weight_center_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file detect_weight_center_drc_routed.rpt -pb detect_weight_center_drc_routed.pb -rpx detect_weight_center_drc_routed.rpx
+Command: report_drc -file detect_weight_center_drc_routed.rpt -pb detect_weight_center_drc_routed.pb -rpx detect_weight_center_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/SR_projekty/reka/centroid_final/centroid_final.runs/impl_1/detect_weight_center_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file detect_weight_center_methodology_drc_routed.rpt -pb detect_weight_center_methodology_drc_routed.pb -rpx detect_weight_center_methodology_drc_routed.rpx
+Command: report_methodology -file detect_weight_center_methodology_drc_routed.rpt -pb detect_weight_center_methodology_drc_routed.pb -rpx detect_weight_center_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/SR_projekty/reka/centroid_final/centroid_final.runs/impl_1/detect_weight_center_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file detect_weight_center_power_routed.rpt -pb detect_weight_center_power_summary_routed.pb -rpx detect_weight_center_power_routed.rpx
+Command: report_power -file detect_weight_center_power_routed.rpt -pb detect_weight_center_power_summary_routed.pb -rpx detect_weight_center_power_routed.rpx
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+70 Infos, 64 Warnings, 61 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file detect_weight_center_route_status.rpt -pb detect_weight_center_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file detect_weight_center_timing_summary_routed.rpt -pb detect_weight_center_timing_summary_routed.pb -rpx detect_weight_center_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file detect_weight_center_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file detect_weight_center_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file detect_weight_center_bus_skew_routed.rpt -pb detect_weight_center_bus_skew_routed.pb -rpx detect_weight_center_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 17:49:46 2019...
+
+*** Running vivado
+    with args -log detect_weight_center.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source detect_weight_center.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source detect_weight_center.tcl -notrace
+Command: open_checkpoint detect_weight_center_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 255.020 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 371 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.488 . Memory (MB): peak = 1112.621 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.489 . Memory (MB): peak = 1112.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1112.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+open_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1112.621 ; gain = 857.602
+Command: write_bitstream -force detect_weight_center.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xil/Vivado/2018.3/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC NSTD-1] Unspecified I/O Standard: 27 out of 27 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: pixel_in[10], pixel_in[0], x[10:0], y[10:0], vsync_rx, de_rx, and clk.
+ERROR: [DRC UCIO-1] Unconstrained Logical Port: 27 out of 27 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: pixel_in[10], pixel_in[0], x[10:0], y[10:0], vsync_rx, de_rx, and clk.
+WARNING: [DRC DPIP-1] Input pipelining: DSP make_m01/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input make_m01/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP make_m01/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input make_m01/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP make_m01/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input make_m01/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP make_m10/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input make_m10/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP make_m10/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input make_m10/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP make_m10/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input make_m10/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC ZPS7-1] PS7 block required: The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: make_m01/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: make_m10/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: make_m01/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: make_m10/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Vivado 12-3199] DRC finished with 2 Errors, 7 Warnings, 4 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 7 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_bitstream failed
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 08:10:45 2019...

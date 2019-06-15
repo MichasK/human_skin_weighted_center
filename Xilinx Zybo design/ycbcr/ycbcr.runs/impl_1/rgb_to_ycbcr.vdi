@@ -1,0 +1,703 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 14 01:04:42 2019
+# Process ID: 15476
+# Current directory: D:/SR_projekty/ycbcr/ycbcr.runs/impl_1
+# Command line: vivado.exe -log rgb_to_ycbcr.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rgb_to_ycbcr.tcl -notrace
+# Log file: D:/SR_projekty/ycbcr/ycbcr.runs/impl_1/rgb_to_ycbcr.vdi
+# Journal file: D:/SR_projekty/ycbcr/ycbcr.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source rgb_to_ycbcr.tcl -notrace
+Command: link_design -top rgb_to_ycbcr -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0.dcp' for cell 'a1_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'w11'
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_ports sys_clock]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:10]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sys_clock]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:10]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_n'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_en[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_scl_io'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_sda_io'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:76]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports hdmi_in_clk_p]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:76]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pHSync'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vga_pVSync'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 627.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+9 Infos, 58 Warnings, 57 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 627.363 ; gain = 321.625
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.735 . Memory (MB): peak = 642.754 ; gain = 15.391
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: e7fe2393
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1155.441 ; gain = 512.688
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: e7fe2393
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 6d012465
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 9 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 12d6f1655
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.298 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 12d6f1655
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.327 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 5e92a978
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.376 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 5e92a978
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.408 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               9  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.000 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 5e92a978
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.416 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 5e92a978
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 5e92a978
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.000 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 5e92a978
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 58 Warnings, 57 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1252.000 ; gain = 624.637
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/SR_projekty/ycbcr/ycbcr.runs/impl_1/rgb_to_ycbcr_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file rgb_to_ycbcr_drc_opted.rpt -pb rgb_to_ycbcr_drc_opted.pb -rpx rgb_to_ycbcr_drc_opted.rpx
+Command: report_drc -file rgb_to_ycbcr_drc_opted.rpt -pb rgb_to_ycbcr_drc_opted.pb -rpx rgb_to_ycbcr_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/SR_projekty/ycbcr/ycbcr.runs/impl_1/rgb_to_ycbcr_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.000 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 4c7723fc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1252.000 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 4ab390fa
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.710 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: d7fcd3d3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.732 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: d7fcd3d3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.733 . Memory (MB): peak = 1252.000 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: d7fcd3d3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.734 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: d7fcd3d3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.736 . Memory (MB): peak = 1252.000 ; gain = 0.000
+WARNING: [Place 46-29] place_design is not in timing mode. Skip physical synthesis in placer
+Phase 2 Global Placement | Checksum: 17c568c8b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 17c568c8b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: eb23312c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 158706c74
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 158706c74
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1081a51c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1081a51c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1081a51c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1081a51c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1081a51c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1081a51c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1081a51c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.000 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 118b5427d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 118b5427d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+Ending Placer Task | Checksum: 8e84acaa
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 59 Warnings, 57 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1252.000 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1256.082 ; gain = 4.082
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1256.082 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/SR_projekty/ycbcr/ycbcr.runs/impl_1/rgb_to_ycbcr_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file rgb_to_ycbcr_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1256.957 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file rgb_to_ycbcr_utilization_placed.rpt -pb rgb_to_ycbcr_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file rgb_to_ycbcr_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1256.957 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 420d88ae ConstDB: 0 ShapeSum: 4c7723fc RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 18b32bd3d
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.234 ; gain = 75.277
+Post Restoration Checksum: NetGraph: e6317a24 NumContArr: a5014319 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 18b32bd3d
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1338.234 ; gain = 81.277
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 18b32bd3d
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1338.234 ; gain = 81.277
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 1898f2632
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1341.512 ; gain = 84.555
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: b6721219
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1342.039 ; gain = 85.082
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: ac0a9c1a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1342.039 ; gain = 85.082
+Phase 4 Rip-up And Reroute | Checksum: ac0a9c1a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1342.039 ; gain = 85.082
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: ac0a9c1a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1342.039 ; gain = 85.082
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: ac0a9c1a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1342.039 ; gain = 85.082
+Phase 6 Post Hold Fix | Checksum: ac0a9c1a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1342.039 ; gain = 85.082
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.330377 %
+  Global Horizontal Routing Utilization  = 0.302619 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 23.4234%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 27.027%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 35.2941%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 35.2941%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: ac0a9c1a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1342.039 ; gain = 85.082
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: ac0a9c1a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1344.047 ; gain = 87.090
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: ac0a9c1a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1344.047 ; gain = 87.090
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1344.047 ; gain = 87.090
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 59 Warnings, 57 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1344.047 ; gain = 87.090
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1344.047 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1344.828 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1344.828 ; gain = 0.781
+INFO: [Common 17-1381] The checkpoint 'D:/SR_projekty/ycbcr/ycbcr.runs/impl_1/rgb_to_ycbcr_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file rgb_to_ycbcr_drc_routed.rpt -pb rgb_to_ycbcr_drc_routed.pb -rpx rgb_to_ycbcr_drc_routed.rpx
+Command: report_drc -file rgb_to_ycbcr_drc_routed.rpt -pb rgb_to_ycbcr_drc_routed.pb -rpx rgb_to_ycbcr_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/SR_projekty/ycbcr/ycbcr.runs/impl_1/rgb_to_ycbcr_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file rgb_to_ycbcr_methodology_drc_routed.rpt -pb rgb_to_ycbcr_methodology_drc_routed.pb -rpx rgb_to_ycbcr_methodology_drc_routed.rpx
+Command: report_methodology -file rgb_to_ycbcr_methodology_drc_routed.rpt -pb rgb_to_ycbcr_methodology_drc_routed.pb -rpx rgb_to_ycbcr_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/SR_projekty/ycbcr/ycbcr.runs/impl_1/rgb_to_ycbcr_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file rgb_to_ycbcr_power_routed.rpt -pb rgb_to_ycbcr_power_summary_routed.pb -rpx rgb_to_ycbcr_power_routed.rpx
+Command: report_power -file rgb_to_ycbcr_power_routed.rpt -pb rgb_to_ycbcr_power_summary_routed.pb -rpx rgb_to_ycbcr_power_routed.rpx
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+66 Infos, 60 Warnings, 57 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file rgb_to_ycbcr_route_status.rpt -pb rgb_to_ycbcr_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file rgb_to_ycbcr_timing_summary_routed.rpt -pb rgb_to_ycbcr_timing_summary_routed.pb -rpx rgb_to_ycbcr_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file rgb_to_ycbcr_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file rgb_to_ycbcr_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file rgb_to_ycbcr_bus_skew_routed.rpt -pb rgb_to_ycbcr_bus_skew_routed.pb -rpx rgb_to_ycbcr_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 14 01:05:29 2019...
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 14 01:05:53 2019
+# Process ID: 15336
+# Current directory: D:/SR_projekty/ycbcr/ycbcr.runs/impl_1
+# Command line: vivado.exe -log rgb_to_ycbcr.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rgb_to_ycbcr.tcl -notrace
+# Log file: D:/SR_projekty/ycbcr/ycbcr.runs/impl_1/rgb_to_ycbcr.vdi
+# Journal file: D:/SR_projekty/ycbcr/ycbcr.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source rgb_to_ycbcr.tcl -notrace
+Command: open_checkpoint rgb_to_ycbcr_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 254.859 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 1124.734 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 1124.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1124.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1124.734 ; gain = 869.875
+Command: write_bitstream -force rgb_to_ycbcr.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xil/Vivado/2018.3/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC NSTD-1] Unspecified I/O Standard: 55 out of 55 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: pixel_in[23:0], pixel_out[23:0], v_sync_out, de_in, de_out, h_sync_in, h_sync_out, v_sync_in, and clk.
+ERROR: [DRC UCIO-1] Unconstrained Logical Port: 55 out of 55 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: pixel_in[23:0], pixel_out[23:0], v_sync_out, de_in, de_out, h_sync_in, h_sync_out, v_sync_in, and clk.
+WARNING: [DRC ZPS7-1] PS7 block required: The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a1_1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a1_2/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a2_1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a2_2/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a3_1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a3_2/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a_1_result/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a_2_result/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a_3_result/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a1_1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a1_2/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a2_1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a2_2/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a3_1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a3_2/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a_1_result/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a_2_result/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: a_3_result/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Vivado 12-3199] DRC finished with 2 Errors, 1 Warnings, 18 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
+write_bitstream failed
+ERROR: [Common 17-39] 'write_bitstream' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 14 01:06:15 2019...

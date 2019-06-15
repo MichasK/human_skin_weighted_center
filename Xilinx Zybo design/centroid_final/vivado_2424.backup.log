@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May  4 17:38:09 2019
+# Process ID: 2424
+# Current directory: D:/SR_projekty/reka/centroid_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11152 D:\SR_projekty\reka\centroid_final\centroid_final.xpr
+# Log file: D:/SR_projekty/reka/centroid_final/vivado.log
+# Journal file: D:/SR_projekty/reka/centroid_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SR_projekty/reka/centroid_final/centroid_final.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/SR blondynka/lab7/detect_weight_center/detect_weight_center.srcs/sim_1/imports/imports/Desktop/delay.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/SR blondynka/lab7/detect_weight_center/detect_weight_center.srcs/sim_1/imports/imports/new/multiDelay.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SR_projekty/reka/delay'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xil/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 739.758 ; gain = 131.039
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/SR blondynka/lab7/detect_weight_center/detect_weight_center.srcs/sim_1/imports/imports/Desktop/delay.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/SR blondynka/lab7/detect_weight_center/detect_weight_center.srcs/sim_1/imports/imports/new/multiDelay.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/SR blondynka/lab7/detect_weight_center/detect_weight_center.srcs/sim_1/imports/imports/Desktop/delay.v} {D:/SR blondynka/lab7/detect_weight_center/detect_weight_center.srcs/sim_1/imports/imports/new/multiDelay.v}}
+reset_run div_28_20_synth_1
+reset_run div_30_20_synth_1
+reset_run sum_mult_synth_1
+reset_run multi_deelay_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div_28_20'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div_30_20'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sum_mult'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'multi_deelay_0'...
+[Sat May  4 17:46:47 2019] Launched div_28_20_synth_1, div_30_20_synth_1, sum_mult_synth_1, multi_deelay_0_synth_1, synth_1...
+Run output will be captured here:
+div_28_20_synth_1: D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_28_20_synth_1/runme.log
+div_30_20_synth_1: D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_30_20_synth_1/runme.log
+sum_mult_synth_1: D:/SR_projekty/reka/centroid_final/centroid_final.runs/sum_mult_synth_1/runme.log
+multi_deelay_0_synth_1: D:/SR_projekty/reka/centroid_final/centroid_final.runs/multi_deelay_0_synth_1/runme.log
+synth_1: D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1/runme.log
+[Sat May  4 17:46:48 2019] Launched impl_1...
+Run output will be captured here: D:/SR_projekty/reka/centroid_final/centroid_final.runs/impl_1/runme.log
+ipx::package_project -root_dir d:/sr_projekty/reka/centroid_final -vendor xilinx.com -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {d:/sr_projekty/reka/centroid_final d:/SR_projekty/reka/delay} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sr_projekty/reka/centroid_final'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SR_projekty/reka/delay'.
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\sr_projekty\reka\centroid_final\xilinx.com_user_detect_weight_center_1.0.zip} [ipx::current_core]
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 17:52:57 2019...

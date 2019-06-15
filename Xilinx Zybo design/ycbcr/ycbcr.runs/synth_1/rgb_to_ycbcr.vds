@@ -1,0 +1,428 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 14 01:04:02 2019
+# Process ID: 11744
+# Current directory: D:/SR_projekty/ycbcr/ycbcr.runs/synth_1
+# Command line: vivado.exe -log rgb_to_ycbcr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb_to_ycbcr.tcl
+# Log file: D:/SR_projekty/ycbcr/ycbcr.runs/synth_1/rgb_to_ycbcr.vds
+# Journal file: D:/SR_projekty/ycbcr/ycbcr.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source rgb_to_ycbcr.tcl -notrace
+Command: synth_design -top rgb_to_ycbcr -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8764 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 409.840 ; gain = 96.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rgb_to_ycbcr' [D:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v:21]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [D:/SR_projekty/ycbcr/ycbcr.runs/synth_1/.Xil/Vivado-11744-DESKTOP-FB8OT1G/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (1#1) [D:/SR_projekty/ycbcr/ycbcr.runs/synth_1/.Xil/Vivado-11744-DESKTOP-FB8OT1G/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c_addsub_0' [D:/SR_projekty/ycbcr/ycbcr.runs/synth_1/.Xil/Vivado-11744-DESKTOP-FB8OT1G/realtime/c_addsub_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c_addsub_0' (2#1) [D:/SR_projekty/ycbcr/ycbcr.runs/synth_1/.Xil/Vivado-11744-DESKTOP-FB8OT1G/realtime/c_addsub_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'delay_line' [D:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/new/delay_line.v:39]
+	Parameter N bound to: 3 - type: integer 
+	Parameter DELAY bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'param_register' [D:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/new/delay_line.v:21]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'param_register' (3#1) [D:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/new/delay_line.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'delay_line' (4#1) [D:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/new/delay_line.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_to_ycbcr' (5#1) [D:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 465.520 ; gain = 152.031
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 465.520 ; gain = 152.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 465.520 ; gain = 152.031
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w11'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w11'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w12'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w12'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w13'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w13'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w21'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w21'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w22'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w22'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w23'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w23'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w31'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w31'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w32'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w32'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w33'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'w33'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a1_1'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a1_1'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a1_2'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a1_2'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a_1_result'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a_1_result'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a2_1'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a2_1'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a2_2'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a2_2'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a_2_result'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a_2_result'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a3_1'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a3_1'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a3_2'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a3_2'
+Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a_3_result'
+Finished Parsing XDC File [d:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/ip/c_addsub_0/c_addsub_0/c_addsub_0_in_context.xdc] for cell 'a_3_result'
+Parsing XDC File [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_ports sys_clock]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_n'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_en[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_scl_io'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_sda_io'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:162]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'vga_pHSync'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'vga_pVSync'. [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:171]
+Finished Parsing XDC File [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/SR_projekty/ycbcr/ycbcr.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/rgb_to_ycbcr_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 781.875 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 781.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 781.875 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 781.875 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 781.875 ; gain = 468.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 781.875 ; gain = 468.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for w11. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for w12. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for w13. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for w21. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for w22. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for w23. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for w31. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for w32. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for w33. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a1_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a1_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a2_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a2_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a3_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a3_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a_1_result. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a_2_result. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a_3_result. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 781.875 ; gain = 468.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 781.875 ; gain = 468.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module param_register 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 781.875 ; gain = 468.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 781.949 ; gain = 468.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 781.949 ; gain = 468.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 791.477 ; gain = 477.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 791.477 ; gain = 477.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 791.477 ; gain = 477.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 791.477 ; gain = 477.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 791.477 ; gain = 477.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 791.477 ; gain = 477.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 791.477 ; gain = 477.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|rgb_to_ycbcr | delay_sync/genblk1[6].register_i/val_reg[2] | 7      | 3     | NO           | YES                | YES               | 3      | 0       | 
++-------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mult_gen_0    |         9|
+|2     |c_addsub_0    |         9|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |c_addsub_0     |     1|
+|2     |c_addsub_0__10 |     1|
+|3     |c_addsub_0__11 |     1|
+|4     |c_addsub_0__12 |     1|
+|5     |c_addsub_0__13 |     1|
+|6     |c_addsub_0__14 |     1|
+|7     |c_addsub_0__15 |     1|
+|8     |c_addsub_0__16 |     1|
+|9     |c_addsub_0__9  |     1|
+|10    |mult_gen_0     |     1|
+|11    |mult_gen_0__10 |     1|
+|12    |mult_gen_0__11 |     1|
+|13    |mult_gen_0__12 |     1|
+|14    |mult_gen_0__13 |     1|
+|15    |mult_gen_0__14 |     1|
+|16    |mult_gen_0__15 |     1|
+|17    |mult_gen_0__16 |     1|
+|18    |mult_gen_0__9  |     1|
+|19    |BUFG           |     1|
+|20    |SRL16E         |     3|
+|21    |FDRE           |     6|
+|22    |IBUF           |    28|
+|23    |OBUF           |    27|
++------+---------------+------+
+
+Report Instance Areas: 
++------+----------------------------+-----------------+------+
+|      |Instance                    |Module           |Cells |
++------+----------------------------+-----------------+------+
+|1     |top                         |                 |   470|
+|2     |  delay_sync                |delay_line       |     9|
+|3     |    \genblk1[0].register_i  |param_register   |     3|
+|4     |    \genblk1[5].register_i  |param_register_0 |     3|
+|5     |    \genblk1[6].register_i  |param_register_1 |     3|
++------+----------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 791.477 ; gain = 477.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 791.477 ; gain = 161.633
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 791.477 ; gain = 477.988
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 799.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 799.965 ; gain = 495.688
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 799.965 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/SR_projekty/ycbcr/ycbcr.runs/synth_1/rgb_to_ycbcr.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rgb_to_ycbcr_utilization_synth.rpt -pb rgb_to_ycbcr_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 14 01:04:31 2019...

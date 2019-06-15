@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/new/delay_line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module param_register
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/ycbcr/ycbcr.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/ycbcr/ycbcr.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/ycbcr/ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb_to_ycbcr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/ycbcr/ycbcr.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk
+INFO: [VRFC 10-311] analyzing module tb_hdmi

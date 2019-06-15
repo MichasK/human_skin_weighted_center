@@ -1,0 +1,165 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xil/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ee524ffc0a8546959a9a3d19df47fb66 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L floating_point_v7_0_15 -L xbip_dsp48_mult_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L div_gen_v5_1_14 -L xil_defaultlib -L c_reg_fd_v12_0_5 -L xbip_addsub_v3_0_5 -L c_addsub_v12_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_behav xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 's_axis_dividend_tdata' [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v:71]
+WARNING: [VRFC 10-3715] size mismatch in mixed language port association, vhdl port 's_axis_dividend_tdata' [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v:72]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_12.c_addsub_v12_0_12_viv_comp
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package xbip_addsub_v3_0_5.xbip_addsub_v3_0_5_viv_comp
+Compiling package c_addsub_v12_0_12.c_addsub_v12_0_12_pkg
+Compiling package c_addsub_v12_0_12.c_addsub_v12_0_12_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_5.xbip_dsp48_addsub_v3_0_5_viv_com...
+Compiling package ieee.std_logic_arith
+Compiling package xbip_dsp48_addsub_v3_0_5.xbip_dsp48_addsub_v3_0_5_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package div_gen_v5_1_14.div_gen_v5_1_14_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_bram18k_v3_0_5.xbip_bram18k_v3_0_5_pkg
+Compiling package div_gen_v5_1_14.div_gen_pkg
+Compiling package div_gen_v5_1_14.pkg_addsub
+Compiling module xil_defaultlib.hdmi_in
+Compiling module xil_defaultlib.delay(N=24)
+Compiling module xil_defaultlib.multi_deelay(N=24,delay=1)
+Compiling module xil_defaultlib.multi_deelay_0
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(preg=...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_5.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_5.xbip_dsp48_addsub_v3_0_5_viv [\xbip_dsp48_addsub_v3_0_5_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_5.xbip_addsub_v3_0_5_viv [\xbip_addsub_v3_0_5_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity c_addsub_v12_0_12.c_addsub_v12_0_12_viv [\c_addsub_v12_0_12_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_12.c_addsub_v12_0_12 [\c_addsub_v12_0_12(c_xdevicefami...]
+Compiling architecture sum_mult_arch of entity xil_defaultlib.sum_mult [sum_mult_default]
+Compiling architecture synth of entity div_gen_v5_1_14.c_twos_comp_viv [\c_twos_comp_viv(c_width=30,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_14.cmp2s_v [\cmp2s_v(c_bus_width=30,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_14.c_twos_comp_viv [\c_twos_comp_viv(c_width=20,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_14.cmp2s_v [\cmp2s_v(c_bus_width=20,c_ainit_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity div_gen_v5_1_14.c_addsub_lut6 [\c_addsub_lut6(c_width=21,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_14.c_addsub_viv [\c_addsub_viv(c_a_width=21,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_14.addsubreg_v [\addsubreg_v(c_bus_width=21,c_ai...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=29...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=28...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=27...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=26...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=25...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=23...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=22...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=21...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=20...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=19...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=18...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=17...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=16...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=15...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=14...]
+Compiling architecture rtl of entity div_gen_v5_1_14.c_addsub_lut6 [\c_addsub_lut6(c_width=21,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_14.c_addsub_viv [\c_addsub_viv(c_a_width=21,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_14.addsubreg_v [\addsubreg_v(c_bus_width=21,c_ai...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=12...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=11...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=10...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=9)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=8)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=7)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=6)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=5)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=4)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=3)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=2)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(1,1)(1,1)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=32...]
+Compiling architecture virtex of entity div_gen_v5_1_14.dividervdc_v [\dividervdc_v(bus_num=30,bus_div...]
+Compiling architecture synth of entity div_gen_v5_1_14.c_twos_comp_viv [\c_twos_comp_viv(c_width=2,c_ain...]
+Compiling architecture virtex of entity div_gen_v5_1_14.cmp2s_v [\cmp2s_v(c_bus_width=2,c_registe...]
+Compiling architecture synth of entity div_gen_v5_1_14.c_twos_comp_viv [\c_twos_comp_viv(c_width=31,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_14.cmp2s_v [\cmp2s_v(c_bus_width=31,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_14.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
+Compiling architecture synth of entity div_gen_v5_1_14.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity div_gen_v5_1_14.div_gen_v5_1_14_viv [\div_gen_v5_1_14_viv(c_xdevicefa...]
+Compiling architecture xilinx of entity div_gen_v5_1_14.div_gen_v5_1_14 [\div_gen_v5_1_14(c_xdevicefamily...]
+Compiling architecture div_30_20_arch of entity xil_defaultlib.div_30_20 [div_30_20_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=13...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=30...]
+Compiling architecture virtex of entity div_gen_v5_1_14.dividervdc_v [\dividervdc_v(bus_num=28,bus_div...]
+Compiling architecture synth of entity div_gen_v5_1_14.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
+Compiling architecture synth of entity div_gen_v5_1_14.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
+Compiling architecture synth of entity div_gen_v5_1_14.div_gen_v5_1_14_viv [\div_gen_v5_1_14_viv(c_xdevicefa...]
+Compiling architecture xilinx of entity div_gen_v5_1_14.div_gen_v5_1_14 [\div_gen_v5_1_14(c_xdevicefamily...]
+Compiling architecture div_28_20_arch of entity xil_defaultlib.div_28_20 [div_28_20_default]
+Compiling module xil_defaultlib.detect_weight_center
+Compiling module xil_defaultlib.hdmi_out
+Compiling module xil_defaultlib.tb_hdmi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_hdmi_behav

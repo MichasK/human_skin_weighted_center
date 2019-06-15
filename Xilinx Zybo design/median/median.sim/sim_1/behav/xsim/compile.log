@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/reka/median/median.srcs/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delayLineBRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/reka/median/median.srcs/sources_1/imports/new/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [D:/SR_projekty/reka/median/median.srcs/sources_1/imports/new/delay.v:17]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/reka/median/median.srcs/sources_1/new/delayLinieBRAM_WP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delayLinieBRAM_WP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/reka/median/median.srcs/sim_1/imports/new/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/reka/median/median.srcs/sim_1/imports/new/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/reka/median/median.srcs/sources_1/new/median.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module median
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/reka/median/median.srcs/sources_1/imports/new/multiDelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiDelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SR_projekty/reka/median/median.srcs/sim_1/imports/new/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi

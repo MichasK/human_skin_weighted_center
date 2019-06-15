@@ -1,0 +1,409 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May  4 17:47:53 2019
+# Process ID: 13400
+# Current directory: D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1
+# Command line: vivado.exe -log detect_weight_center.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source detect_weight_center.tcl
+# Log file: D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1/detect_weight_center.vds
+# Journal file: D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source detect_weight_center.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SR_projekty/reka/delay'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xil/Vivado/2018.3/data/ip'.
+Command: synth_design -top detect_weight_center -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2596 
+WARNING: [Synth 8-2490] overwriting previous definition of module multi_deelay_0 [d:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/multi_deelay_0/synth/multi_deelay_0.v:58]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 423.883 ; gain = 110.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'detect_weight_center' [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v:3]
+	Parameter IMG_H bound to: 64 - type: integer 
+	Parameter IMG_W bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multi_deelay_0' [d:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/multi_deelay_0/synth/multi_deelay_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'multi_deelay' [d:/SR_projekty/SR_projekty/reka/delay/delay.srcs/sources_1/new/multiDelay.v:45]
+	Parameter N bound to: 24 - type: integer 
+	Parameter delay bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'delay' [d:/SR_projekty/SR_projekty/reka/delay/delay.srcs/sources_1/new/delay.v:2]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay' (1#1) [d:/SR_projekty/SR_projekty/reka/delay/delay.srcs/sources_1/new/delay.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'multi_deelay' (2#1) [d:/SR_projekty/SR_projekty/reka/delay/delay.srcs/sources_1/new/multiDelay.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'multi_deelay_0' (3#1) [d:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/multi_deelay_0/synth/multi_deelay_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'sum_mult' [D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1/.Xil/Vivado-13400-DESKTOP-FB8OT1G/realtime/sum_mult_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sum_mult' (4#1) [D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1/.Xil/Vivado-13400-DESKTOP-FB8OT1G/realtime/sum_mult_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'div_30_20' [D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1/.Xil/Vivado-13400-DESKTOP-FB8OT1G/realtime/div_30_20_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'div_30_20' (5#1) [D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1/.Xil/Vivado-13400-DESKTOP-FB8OT1G/realtime/div_30_20_stub.v:6]
+WARNING: [Synth 8-350] instance 'center_x' of module 'div_30_20' requires 8 connections, but only 4 given [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v:71]
+INFO: [Synth 8-6157] synthesizing module 'div_28_20' [D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1/.Xil/Vivado-13400-DESKTOP-FB8OT1G/realtime/div_28_20_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'div_28_20' (6#1) [D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1/.Xil/Vivado-13400-DESKTOP-FB8OT1G/realtime/div_28_20_stub.v:6]
+WARNING: [Synth 8-350] instance 'center_y' of module 'div_28_20' requires 8 connections, but only 4 given [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'detect_weight_center' (7#1) [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v:3]
+WARNING: [Synth 8-3331] design detect_weight_center has unconnected port hsync_rx
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 511.172 ; gain = 197.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 511.172 ; gain = 197.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 511.172 ; gain = 197.371
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_28_20_synth_1/div_28_20/div_28_20_in_context.xdc] for cell 'center_y'
+Finished Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_28_20_synth_1/div_28_20/div_28_20_in_context.xdc] for cell 'center_y'
+Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_30_20_synth_1/div_30_20/div_30_20_in_context.xdc] for cell 'center_x'
+Finished Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_30_20_synth_1/div_30_20/div_30_20_in_context.xdc] for cell 'center_x'
+Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.runs/sum_mult_synth_1/sum_mult/sum_mult_in_context.xdc] for cell 'make_m01'
+Finished Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.runs/sum_mult_synth_1/sum_mult/sum_mult_in_context.xdc] for cell 'make_m01'
+Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.runs/sum_mult_synth_1/sum_mult/sum_mult_in_context.xdc] for cell 'make_m10'
+Finished Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.runs/sum_mult_synth_1/sum_mult/sum_mult_in_context.xdc] for cell 'make_m10'
+Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_ports sys_clock]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sys_clock'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_n'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hpd[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_en[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_scl_io'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_sda_io'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'vga_pRed[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'vga_pGreen[5]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[0]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:162]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[1]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[2]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:165]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[3]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'vga_pBlue[4]'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'vga_pHSync'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'vga_pVSync'. [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc:171]
+Finished Parsing XDC File [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/detect_weight_center_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.594 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 792.594 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 792.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 792.594 ; gain = 478.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 792.594 ; gain = 478.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for center_y. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for center_x. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for make_m01. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for make_m10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for del_input. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 792.594 ; gain = 478.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'x' [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'y' [D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/new/detect_weight_center.v:76]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 792.594 ; gain = 478.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module detect_weight_center 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module delay 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design detect_weight_center has unconnected port hsync_rx
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 792.594 ; gain = 478.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 797.680 ; gain = 483.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 797.906 ; gain = 484.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 807.781 ; gain = 493.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module center_x has unconnected pin s_axis_divisor_tvalid
+CRITICAL WARNING: [Synth 8-4442] BlackBox module center_x has unconnected pin s_axis_dividend_tvalid
+CRITICAL WARNING: [Synth 8-4442] BlackBox module center_y has unconnected pin s_axis_divisor_tvalid
+CRITICAL WARNING: [Synth 8-4442] BlackBox module center_y has unconnected pin s_axis_dividend_tvalid
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 807.781 ; gain = 493.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 807.781 ; gain = 493.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 807.781 ; gain = 493.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 807.781 ; gain = 493.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 807.781 ; gain = 493.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 807.781 ; gain = 493.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |sum_mult      |         2|
+|2     |div_30_20     |         1|
+|3     |div_28_20     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |div_28_20   |     1|
+|2     |div_30_20   |     1|
+|3     |sum_mult    |     1|
+|4     |sum_mult__1 |     1|
+|5     |BUFG        |     2|
+|6     |CARRY4      |     5|
+|7     |LUT1        |     2|
+|8     |LUT2        |    65|
+|9     |LUT3        |     5|
+|10    |LUT4        |     6|
+|11    |LUT5        |     5|
+|12    |LUT6        |     7|
+|13    |FDRE        |    65|
+|14    |FDSE        |     2|
+|15    |LD          |    22|
+|16    |IBUF        |    27|
+|17    |OBUF        |    22|
++------+------------+------+
+
+Report Instance Areas: 
++------+----------------------+---------------+------+
+|      |Instance              |Module         |Cells |
++------+----------------------+---------------+------+
+|1     |top                   |               |   363|
+|2     |  del_input           |multi_deelay_0 |    24|
+|3     |    inst              |multi_deelay   |    24|
+|4     |      \(null)[0].del  |delay          |    24|
++------+----------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 807.781 ; gain = 493.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 4 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 807.781 ; gain = 212.559
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 807.781 ; gain = 493.980
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  LD => LDCE: 22 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 66 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 820.355 ; gain = 516.734
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.355 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/SR_projekty/reka/centroid_final/centroid_final.runs/synth_1/detect_weight_center.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file detect_weight_center_utilization_synth.rpt -pb detect_weight_center_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 17:48:36 2019...

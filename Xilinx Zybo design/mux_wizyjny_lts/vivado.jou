@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun 15 23:49:05 2019
+# Process ID: 16468
+# Current directory: D:/SR_projekty/reka/mux_wizyjny_lts
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10304 D:\SR_projekty\reka\mux_wizyjny_lts\mux_wizyjny_lts.xpr
+# Log file: D:/SR_projekty/reka/mux_wizyjny_lts/vivado.log
+# Journal file: D:/SR_projekty/reka/mux_wizyjny_lts\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SR_projekty/reka/mux_wizyjny_lts/mux_wizyjny_lts.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May  4 17:17:36 2019
+# Process ID: 9208
+# Current directory: D:/SR_projekty/reka/delay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11784 D:\SR_projekty\reka\delay\delay.xpr
+# Log file: D:/SR_projekty/reka/delay/vivado.log
+# Journal file: D:/SR_projekty/reka/delay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SR_projekty/reka/delay/delay.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/SR_projekty/reka/delay/delay.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xil/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 761.883 ; gain = 143.398
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open D:/SR_projekty/reka/delay/delay.srcs/sources_1/new/multiDelay.v w ]
+add_files D:/SR_projekty/reka/delay/delay.srcs/sources_1/new/multiDelay.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Sat May  4 17:21:11 2019] Launched synth_1...
+Run output will be captured here: D:/SR_projekty/reka/delay/delay.runs/synth_1/runme.log
+[Sat May  4 17:21:12 2019] Launched impl_1...
+Run output will be captured here: D:/SR_projekty/reka/delay/delay.runs/impl_1/runme.log
+ipx::package_project -root_dir d:/sr_projekty/reka/delay/delay.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/SR_projekty/reka/delay/delay.srcs/sources_1/new
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/SR_projekty/reka/delay/delay.srcs/sources_1/new'
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\sr_projekty\reka\delay\delay.srcs\sources_1\new\xilinx.com_user_multi_deelay_1.0.zip} [ipx::current_core]
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May  4 17:29:06 2019...

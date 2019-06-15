@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/div_28_20/sim/div_28_20.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'div_28_20'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/div_30_20/sim/div_30_20.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'div_30_20'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/SR_projekty/reka/centroid_final/centroid_final.srcs/sources_1/ip/sum_mult/sim/sum_mult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sum_mult'

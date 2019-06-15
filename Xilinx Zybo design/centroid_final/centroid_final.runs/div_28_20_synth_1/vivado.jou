@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May  4 17:46:50 2019
+# Process ID: 10104
+# Current directory: D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_28_20_synth_1
+# Command line: vivado.exe -log div_28_20.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source div_28_20.tcl
+# Log file: D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_28_20_synth_1/div_28_20.vds
+# Journal file: D:/SR_projekty/reka/centroid_final/centroid_final.runs/div_28_20_synth_1\vivado.jou
+#-----------------------------------------------------------
+source div_28_20.tcl -notrace

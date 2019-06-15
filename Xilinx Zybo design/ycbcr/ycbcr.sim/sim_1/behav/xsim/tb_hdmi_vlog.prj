@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ycbcr.srcs/sources_1/new/delay_line.v" \
+"../../../../ycbcr.srcs/sim_1/imports/tb_src/hdmi_in.v" \
+"../../../../ycbcr.srcs/sim_1/imports/tb_src/hdmi_out.v" \
+"../../../../ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v" \
+"../../../../ycbcr.srcs/sim_1/imports/tb_src/tb_hdmi.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
